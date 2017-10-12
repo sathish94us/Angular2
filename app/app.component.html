@@ -1,0 +1,11 @@
+<div>
+  <h1>Routing Sample</h1>
+  <input [value]="username" (input)="username = $event.target.value">
+
+<p>Hello {{username}}!</p>
+  <nav>
+    <a (click)="OnClick()" routerLinkActive="active">Department</a>
+    <a routerLink="/employees" routerLinkActive="active">Employess</a>
+  </nav>
+</div>
+<router-outlet></router-outlet>
